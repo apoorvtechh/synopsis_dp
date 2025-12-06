@@ -29,18 +29,61 @@ menu = st.sidebar.radio(
 # 1️⃣ PROJECT OVERVIEW
 # ---------------------------------------
 if menu == "1️⃣ Project Overview":
-    st.header("📊 Project Overview")
-    st.write("""
-    This project predicts hourly ride demand using a **Hybrid Forecasting Model**
-    combining **Prophet** and **XGBoost**.
 
-    ### Key Features
-    - Region-wise demand prediction  
-    - Rolling window optimization  
-    - Long-term & short-term pattern capture  
-    - End-to-end Streamlit dashboard  
-    - Deployed with AWS Auto Scaling  
+    st.header("🚖 Project Overview — NYC Taxi Demand Forecasting")
+
+    st.write("""
+    This project builds a **real-time 15-minute taxi demand forecasting system** 
+    using **33 million NYC Yellow Taxi trips** from Jan–Mar 2016.
+
+    The purpose is to understand and predict how pickup demand changes 
+    across different regions of NYC throughout the day.
     """)
+
+    st.markdown("---")
+
+    st.subheader("🎯 Why This Project Was Built")
+    st.write("""
+    Taxi demand is unpredictable because of:
+    - sudden surges (rain, rush hour, events)
+    - region-specific patterns
+    - weekday vs weekend differences
+    - highly noisy and irregular trip behavior
+
+    A raw machine-learning model on this dataset gave a **MAPE of ~0.67 (67% error)**, 
+    which is too high to be used in real decision-making.
+    """)
+
+    st.info("Goal: Reduce error and create a stable forecasting system for every region of NYC.")
+
+    st.markdown("---")
+
+    st.subheader("🧠 What This System Does")
+    st.write("""
+    - Divides NYC into **30 meaningful pickup regions**
+    - Converts raw trips into a **15-minute structured time-series**
+    - Learns short-term spikes, daily/weekly cycles, and region-specific behavior
+    - Predicts future demand for each region separately
+    """)
+
+    st.success("Final Results: Error reduced from **0.67 → 0.0301**,  a **95% improvement in forecasting accuracy**.")
+
+    st.markdown("---")
+
+    st.subheader("🚕 How This Helps Drivers & Platforms")
+    st.write("""
+    - Drivers can see **which region will have demand next**
+    - Reduces empty roaming and wasted fuel
+    - Helps drivers reach hotspots before the surge begins
+    - Taxi platforms can:
+        - match drivers more efficiently  
+        - reduce customer wait time  
+        - avoid sudden supply shortages  
+    """)
+
+    st.markdown("---")
+
+
 
 # ---------------------------------------
 # 2️⃣ DATASET DESCRIPTION
