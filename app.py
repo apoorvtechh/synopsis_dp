@@ -28,10 +28,48 @@ menu = st.sidebar.radio(
 # ---------------------------------------
 # 1️⃣ PROJECT OVERVIEW
 # ---------------------------------------
-# ---------------------------------------
-# 1️⃣ PROJECT OVERVIEW
-# ---------------------------------------
 if menu == "1️⃣ Project Overview":
+
+    # 🌐 LIVE APP CARD AT THE TOP
+    st.markdown("""
+    <style>
+    .live-card {
+        padding: 18px;
+        border-radius: 12px;
+        background-color: #1e1e1e;
+        border: 1px solid #444;
+        box-shadow: 0px 0px 10px rgba(255,255,255,0.08);
+        margin-bottom: 20px;
+    }
+    .live-card h3 {
+        color: #FFD369;
+        margin-bottom: 6px;
+        font-size: 22px;
+    }
+    .live-btn {
+        background-color: #04AA6D;
+        color: white !important;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none !important;
+        font-weight: bold;
+        font-size: 16px;
+        display: inline-block;
+        margin-top: 8px;
+    }
+    .live-btn:hover {
+        background-color: #038e5b;
+        color: white !important;
+    }
+    </style>
+
+    <div class="live-card">
+        <h3>🚀 Live NYC Demand Forecasting Dashboard</h3>
+        <p>Click below to explore the fully deployed real-time application.</p>
+        <a href="https://apoorvtechh-dashboard-demand-prediction-app-gx2szx.streamlit.app/" 
+           target="_blank" class="live-btn">🔗 Launch Live App</a>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.header("🚖 Project Overview — NYC Taxi Demand Forecasting")
 
@@ -100,6 +138,7 @@ if menu == "1️⃣ Project Overview":
     """)
 
     st.markdown("---")
+
 
 
 
