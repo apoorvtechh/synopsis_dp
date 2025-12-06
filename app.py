@@ -28,6 +28,9 @@ menu = st.sidebar.radio(
 # ---------------------------------------
 # 1️⃣ PROJECT OVERVIEW
 # ---------------------------------------
+# ---------------------------------------
+# 1️⃣ PROJECT OVERVIEW
+# ---------------------------------------
 if menu == "1️⃣ Project Overview":
 
     st.header("🚖 Project Overview — NYC Taxi Demand Forecasting")
@@ -66,7 +69,7 @@ if menu == "1️⃣ Project Overview":
     - Predicts future demand for each region separately
     """)
 
-    st.success("Final Results: Error reduced from **0.67 → 0.0301**,  a **95% improvement in forecasting accuracy**.")
+    st.success("Final Results: Error reduced from **0.67 → 0.0301**, a **95% improvement in forecasting accuracy**.")
 
     st.markdown("---")
 
@@ -82,6 +85,22 @@ if menu == "1️⃣ Project Overview":
     """)
 
     st.markdown("---")
+
+    st.subheader("🌐 Live Working Application")
+    st.write("""
+    You can explore the **fully deployed real-time forecasting dashboard** here:
+
+    👉 **[🔗 Live App — NYC Demand Forecaster](https://apoorvtechh-dashboard-demand-prediction-app-gx2szx.streamlit.app/)**
+
+    This app allows users to:
+    - generate random NYC pickup points  
+    - detect their region  
+    - forecast demand for **all 30 regions**  
+    - view demand maps & heatmaps in real-time  
+    """)
+
+    st.markdown("---")
+
 
 
 
