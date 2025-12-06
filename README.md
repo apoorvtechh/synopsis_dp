@@ -10,6 +10,11 @@ Explore the full interactive explanation:
 
 🔗 **https://apoorvtechh-synopsis-dp-app-wxbcw6.streamlit.app/**
 
+## 🚀 Live  App  
+Explore the working:
+
+🔗 **https://apoorvtechh-dashboard-demand-prediction-app-gx2szx.streamlit.app/**
+
 ---
 
 ## 📚 What This Synopsis Covers
