@@ -91,8 +91,7 @@ if menu == "1️⃣ Project Overview":
     - weekday vs weekend differences
     - highly noisy and irregular trip behavior
 
-    A raw machine-learning model on this dataset gave a **MAPE of ~0.67 (67% error)**, 
-    which is too high to be used in real decision-making.
+    A raw machine-learning model on this dataset gave a MAPE of ~0.047, which was later improved to 0.0301 — a 36% reduction in error.
     """)
 
     st.info("Goal: Reduce error and create a stable forecasting system for every region of NYC.")
@@ -107,7 +106,7 @@ if menu == "1️⃣ Project Overview":
     - Predicts future demand for each region separately
     """)
 
-    st.success("Final Results: Error reduced from **0.67 → 0.0301**, a **95% improvement in forecasting accuracy**.")
+    st.success("Final Results: Error reduced from **0.047 → 0.0301**.")
 
     st.markdown("---")
 
@@ -837,7 +836,7 @@ elif menu == "5️⃣ Baseline Model":
     st.write("""
     ### 📊 XGBoost Results
 
-    - ✅ **XGBoost Baseline Overall MAPE:** `0.061`  
+    - ✅ **XGBoost Baseline Overall MAPE:** `0.047`  
 
 
     """)
@@ -1234,7 +1233,7 @@ elif menu == "7️⃣ DVC Pipeline":
 
     st.write("""
     **Purpose:**  
-    Safely load ~38M rows of raw taxi CSV files and clean them.
+    Safely load ~33M rows of raw taxi CSV files and clean them.
 
     **Key Operations:**  
     - Loads data using **Dask** to avoid memory overflow.  
@@ -1393,7 +1392,7 @@ elif menu == "8️⃣ Conclusion":
     - Performed **region-wise model training** and **hyperparameter tuning**.  
     - Obtained a highly accurate final model with:
 
-      ### ⭐ **Final Average Hybrid MAPE ≈ 3.21%**
+      ### ⭐ **Final Average Hybrid MAPE ≈ 3.01%**
     """)
 
     st.success("🚀 The hybrid approach significantly improved forecasting accuracy across most regions.")
